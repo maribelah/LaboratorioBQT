@@ -1,0 +1,35 @@
+{
+  "alpha": {
+    "vendor": "Florexpo Central",
+    "carrier": "Florexpo",
+    "searchQuery": "Rose",
+    "productsToSelect": 2,
+    "quickFill": {
+      "customer": "COSTCO WHOLESALE",
+      "boxes": "10",
+      "cost": "12"
+    }
+  },
+  "beta": {
+    "vendor": "Florexpo Central",
+    "carrier": "Florexpo",
+    "searchQuery": "Rose",
+    "productsToSelect": 2,
+    "quickFill": {
+      "customer": "COSTCO WHOLESALE",
+      "boxes": "10",
+      "cost": "12"
+    }
+  },
+  "prod": {
+    "vendor": "Florexpo Central",
+    "carrier": "Florexpo",
+    "searchQuery": "Rose",
+    "productsToSelect": 2,
+    "quickFill": {
+      "customer": "COSTCO WHOLESALE",
+      "boxes": "10",
+      "cost": "12"
+    }
+  }
+}

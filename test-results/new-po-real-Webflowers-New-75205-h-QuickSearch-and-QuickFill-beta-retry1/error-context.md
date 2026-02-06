@@ -1,0 +1,645 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - button "Choose File" [ref=e2]
+  - generic:
+    - iframe [ref=e4]:
+      - generic [ref=f1e3]:
+        - generic [ref=f1e4]:
+          - generic [ref=f1e7]: WF WebFlowers
+          - searchbox "Search Modules" [ref=f1e9]
+          - generic [ref=f1e11]:
+            - generic "Module of Help" [ref=f1e12] [cursor=pointer]
+            - generic "Notifications" [ref=f1e14] [cursor=pointer]
+            - generic "New Page" [ref=f1e15] [cursor=pointer]
+            - generic "What's new" [ref=f1e16] [cursor=pointer]
+        - generic [ref=f1e18]:
+          - text: QA Automatizacion / Kendal Central
+          - text: MBB
+    - iframe [active] [ref=e6]:
+      - list [ref=f2e4]:
+        - listitem [ref=f2e5]:
+          - generic "Favorites" [ref=f2e6]:
+            - generic [ref=f2e8] [cursor=pointer]: Favorites
+        - listitem [ref=f2e10]:
+          - generic "Users" [ref=f2e11]:
+            - generic [ref=f2e13] [cursor=pointer]: Users
+        - listitem [ref=f2e15]:
+          - generic "Settings" [ref=f2e16]:
+            - generic [ref=f2e18] [cursor=pointer]: Settings
+        - listitem [ref=f2e20]:
+          - generic "General" [ref=f2e21]:
+            - generic [ref=f2e23] [cursor=pointer]: General
+        - listitem [ref=f2e25]:
+          - generic "Intercom" [ref=f2e26]:
+            - generic [ref=f2e28] [cursor=pointer]: Intercom
+        - listitem [ref=f2e30]:
+          - generic "Human Resources" [ref=f2e31]:
+            - generic [ref=f2e33] [cursor=pointer]: Human Resources
+        - listitem [ref=f2e35]:
+          - generic "Carriers" [ref=f2e36]:
+            - generic [ref=f2e38] [cursor=pointer]: Carriers
+        - listitem [ref=f2e40]:
+          - generic "Customers" [ref=f2e41]:
+            - generic [ref=f2e43] [cursor=pointer]: Customers
+        - listitem [ref=f2e45]:
+          - generic "Vendors" [ref=f2e46]:
+            - generic [ref=f2e48] [cursor=pointer]: Vendors
+        - listitem [ref=f2e50]:
+          - generic "Hardgoods" [ref=f2e51]:
+            - generic [ref=f2e53] [cursor=pointer]: Hardgoods
+        - listitem [ref=f2e55]:
+          - generic "Products" [ref=f2e56]:
+            - generic [ref=f2e58] [cursor=pointer]: Products
+        - listitem [ref=f2e60]:
+          - generic "Flowers" [ref=f2e61]:
+            - generic [ref=f2e63] [cursor=pointer]: Flowers
+        - listitem [ref=f2e65]:
+          - generic "Sales" [ref=f2e66]:
+            - generic [ref=f2e68] [cursor=pointer]: Sales
+        - listitem [ref=f2e70]:
+          - generic "Procurement" [ref=f2e71]:
+            - generic [ref=f2e73] [cursor=pointer]: Procurement
+            - list [ref=f2e75]:
+              - listitem [ref=f2e76]:
+                - generic "Settings" [ref=f2e77]:
+                  - generic [ref=f2e79] [cursor=pointer]: Settings
+              - listitem [ref=f2e81]:
+                - generic "Tools" [ref=f2e82]:
+                  - generic [ref=f2e84] [cursor=pointer]: Tools
+              - listitem [ref=f2e86]:
+                - generic "Products" [ref=f2e87]:
+                  - generic [ref=f2e89] [cursor=pointer]: Products
+                  - list [ref=f2e91]:
+                    - listitem [ref=f2e92]:
+                      - generic "Product Needs" [ref=f2e93]:
+                        - link "Product Needs" [ref=f2e94] [cursor=pointer]:
+                          - /url: ../Procurement/ProductNeeds.aspx?xapApplicationName=&menuId=PROCUREMENT_PRODUCT_NEEDS&caption=Product Needs
+                          - generic [ref=f2e95]: Product Needs
+                    - listitem [ref=f2e97]:
+                      - generic "Assign Vendors" [ref=f2e98]:
+                        - link "Assign Vendors" [ref=f2e99] [cursor=pointer]:
+                          - /url: ../Procurement/VendorsAssignment.aspx?xapApplicationName=&menuId=PROCUREMENT_VENDORS_ASSIGNMENT&caption=Assign Vendors
+                          - generic [ref=f2e100]: Assign Vendors
+                    - listitem [ref=f2e102]:
+                      - generic "Farm Orders" [ref=f2e103]:
+                        - link "Farm Orders" [ref=f2e104] [cursor=pointer]:
+                          - /url: ../Procurement/ListFarmOrders.aspx?xapApplicationName=&menuId=PROCUREMENT_LIST_FARM_ORDERS&caption=Farm Orders
+                          - generic [ref=f2e105]: Farm Orders
+                    - listitem [ref=f2e107]:
+                      - generic "New PO" [ref=f2e108]:
+                        - link "New PO" [active] [ref=f2e109] [cursor=pointer]:
+                          - /url: ../Procurement/NewProductOrderAjax.aspx?xapApplicationName=&menuId=PROCUREMENT_NEW_PRODUCT_ORDER&caption=New PO
+                          - generic [ref=f2e110]: New PO
+                    - listitem [ref=f2e112]:
+                      - generic "Purchase Orders" [ref=f2e113]:
+                        - link "Purchase Orders" [ref=f2e114] [cursor=pointer]:
+                          - /url: ../Procurement/ListProductOrders.aspx?xapApplicationName=&menuId=PROCUREMENT_LIST_PRODUCT_ORDERS&caption=Purchase Orders
+                          - generic [ref=f2e115]: Purchase Orders
+                    - listitem [ref=f2e117]:
+                      - generic "New SO" [ref=f2e118]:
+                        - link "New SO" [ref=f2e119] [cursor=pointer]:
+                          - /url: ../Procurement/NewProductPurchaseStandingOrder.aspx?xapApplicationName=&menuId=PROCUREMENT_NEW_STANDING_PRODUCT_ORDER&caption=New SO
+                          - generic [ref=f2e120]: New SO
+              - listitem [ref=f2e122]:
+                - generic "Bulk" [ref=f2e123]:
+                  - generic [ref=f2e125] [cursor=pointer]: Bulk
+              - listitem [ref=f2e127]:
+                - generic "Hardgoods" [ref=f2e128]:
+                  - generic [ref=f2e130] [cursor=pointer]: Hardgoods
+              - listitem [ref=f2e132]:
+                - generic "Shipments" [ref=f2e133]:
+                  - generic [ref=f2e135] [cursor=pointer]: Shipments
+              - listitem [ref=f2e137]:
+                - generic "Purchase Order Approval" [ref=f2e138]:
+                  - link "Purchase Order Approval" [ref=f2e139] [cursor=pointer]:
+                    - /url: ../Procurement/PurchaseOrderApproval.aspx?xapApplicationName=&menuId=PURCHASE_ORDER_APPROVAL&caption=Purchase Order Approval
+                    - generic [ref=f2e140]: Purchase Order Approval
+              - listitem [ref=f2e142]:
+                - generic "Standing Orders" [ref=f2e143]:
+                  - link "Standing Orders" [ref=f2e144] [cursor=pointer]:
+                    - /url: ../Procurement/ListPurchaseStandingOrders.aspx?xapApplicationName=&menuId=PROCUREMENT_LIST_PURCHASE_STANDING_ORDERS&caption=Standing Orders
+                    - generic [ref=f2e145]: Standing Orders
+              - listitem [ref=f2e147]:
+                - generic "Importer PO" [ref=f2e148]:
+                  - generic [ref=f2e150] [cursor=pointer]: Importer PO
+        - listitem [ref=f2e152]:
+          - generic "Inventory" [ref=f2e153]:
+            - generic [ref=f2e155] [cursor=pointer]: Inventory
+        - listitem [ref=f2e157]:
+          - generic "Quality" [ref=f2e158]:
+            - generic [ref=f2e160] [cursor=pointer]: Quality
+        - listitem [ref=f2e162]:
+          - generic "Production" [ref=f2e163]:
+            - generic [ref=f2e165] [cursor=pointer]: Production
+        - listitem [ref=f2e167]:
+          - generic "Shipping" [ref=f2e168]:
+            - generic [ref=f2e170] [cursor=pointer]: Shipping
+        - listitem [ref=f2e172]:
+          - generic "Vendor Management" [ref=f2e173]:
+            - generic [ref=f2e175] [cursor=pointer]: Vendor Management
+        - listitem [ref=f2e177]:
+          - generic "Accounting" [ref=f2e178]:
+            - generic [ref=f2e180] [cursor=pointer]: Accounting
+        - listitem [ref=f2e182]:
+          - generic "Reports" [ref=f2e183]:
+            - generic [ref=f2e185] [cursor=pointer]: Reports
+        - listitem [ref=f2e187]:
+          - generic "Preview" [ref=f2e188]:
+            - generic [ref=f2e190] [cursor=pointer]: Preview
+    - iframe [ref=e8]:
+      - generic [active] [ref=f3e1]:
+        - generic [ref=f3e2]: Procurement - New Purchase Order [Products]
+        - generic [ref=f3e3]:
+          - generic [ref=f3e4]:
+            - table [ref=f3e6]:
+              - rowgroup [ref=f3e7]:
+                - 'row "P.O. #: New Order Vendor: [Selected]" [ref=f3e8]':
+                  - 'cell "P.O. #:" [ref=f3e9]':
+                    - generic [ref=f3e10]: "P.O. #:"
+                  - cell "New Order" [ref=f3e11]
+                  - cell [ref=f3e12]:
+                    - img [ref=f3e13]
+                  - cell "Vendor:" [ref=f3e14]:
+                    - generic [ref=f3e15]: "Vendor:"
+                  - cell "[Selected]" [ref=f3e16]:
+                    - combobox [ref=f3e17]:
+                      - option "[Selected]" [selected]
+                      - option "123 Edi, Inc"
+                      - option "A & B Fire Protection"
+                      - option "A De La Cruz Transport Llc"
+                      - option "A T & T"
+                      - option "A&A Auto Mechanics"
+                      - option "Adesha Davis - Employee"
+                      - option "Albin Hagstrom & Son, Inc"
+                      - option "Allium Flowers and Greens"
+                      - option "Aloha Printing"
+                      - option "American Express - Nestor Martinez"
+                      - option "AS Flowers LLC"
+                      - option "Bandy Ranch Floral Corp."
+                      - option "Bangkok Intimex"
+                      - option "Bella Blossom"
+                      - option "Bella Flowers"
+                      - option "Bloomia"
+                      - option "Bloomstar Alliance"
+                      - option "Blossoms Direct Corp"
+                      - option "Blumelii"
+                      - option "Bonita Farms"
+                      - option "Bouquet Collection"
+                      - option "Broekhof"
+                      - option "Bushido Farms"
+                      - option "Calla Co"
+                      - option "Canby Plumbing Inc"
+                      - option "Charme Flowers"
+                      - option "CIRCASIA"
+                      - option "Coastal Express"
+                      - option "Connectaflor"
+                      - option "Continental Farms"
+                      - option "Continental Floral Llc"
+                      - option "Corina s Wholesale Florist"
+                      - option "Costco Wholesale"
+                      - option "Creative Floral Solutions"
+                      - option "Cross Farms"
+                      - option "Crown Selection"
+                      - option "D & M Wholesale"
+                      - option "Deco Wraps"
+                      - option "Designers Choice Llc"
+                      - option "Designers Choice Purchases"
+                      - option "Dinalb Ltda"
+                      - option "Direct Farms, Llc."
+                      - option "Discovery Farms"
+                      - option "Dos Gringos"
+                      - option "Dramm & Echter"
+                      - option "Dream Farms"
+                      - option "Ecoflora"
+                      - option "EQR Roses"
+                      - option "EQR Roses-dont use"
+                      - option "Erwin Mojonnier Enterprises"
+                      - option "Esprit"
+                      - option "Everbloom"
+                      - option "Evergreen Floral"
+                      - option "Expoflora S.A."
+                      - option "Falcon Farms"
+                      - option "Farms Connect"
+                      - option "Farms Connect"
+                      - option "Farms Connect"
+                      - option "FBI"
+                      - option "Fleet Services"
+                      - option "FLORA SOURCE, LLC."
+                      - option "Floralife"
+                      - option "Florawest"
+                      - option "Floreco, Inc"
+                      - option "Flores la Conchita"
+                      - option "Flores Maria"
+                      - option "Flores San Juan S.A"
+                      - option "Flores San Miguel"
+                      - option "Florexpo Carlsbad"
+                      - option "Florexpo Central"
+                      - option "Florexpo Misc."
+                      - option "Florimex"
+                      - option "Florius Flowers"
+                      - option "Flower Effect"
+                      - option "Flower Impression"
+                      - option "Fynbos Farms LLC."
+                      - option "G J Flowers Distributors"
+                      - option "Galleria Farms, Llc."
+                      - option "Gladaway"
+                      - option "Golden Flowers, Inc."
+                      - option "Green Bouquet Farm"
+                      - option "Green Valley Floral Inc"
+                      - option "Greenex"
+                      - option "Gutimilko"
+                      - option "H Flowers S.A.S"
+                      - option "Herradura Growers"
+                      - option "Holland America Flowers llc"
+                      - option "Holland America Flowers llc"
+                      - option "Hollandia Greenhouse Ltd"
+                      - option "Hortensias Santa Elena Sas"
+                      - option "Hosa International, Inc."
+                      - option "Interflor"
+                      - option "iNTERNATIONAL PAPER"
+                      - option "J. Farms"
+                      - option "Jet Fresh Flowers"
+                      - option "Jorge Farms"
+                      - option "Jw Cleaning & Restoration"
+                      - option "Kaeser Compressors, Inc."
+                      - option "Karina Garcia - Employee"
+                      - option "KENDAL NORTH"
+                      - option "Kendal South"
+                      - option "Kendall Farms"
+                      - option "KennicottKuts"
+                      - option "Kitayama Bros. Inc"
+                      - option "Koen Pack"
+                      - option "La Esencia Protea Farm"
+                      - option "La Gaitana Farms S.A."
+                      - option "Legacy Flowers"
+                      - option "Liberty Blooms Inc."
+                      - option "Lolita"
+                      - option "Mack Packaging, Inc."
+                      - option "Mariposa Growers"
+                      - option "Martin Schmidt & Sons"
+                      - option "Mclellan Botanicals"
+                      - option "Mellano & Company"
+                      - option "Melody Farms"
+                      - option "Meraki Flowers Forwarding, LLC"
+                      - option "Mercedes S.A."
+                      - option "Miaflora"
+                      - option "Miraflor"
+                      - option "Mobis Floral"
+                      - option "Monterey Bay Bouquet"
+                      - option "Multiflora Farm Direct Experts"
+                      - option "Natural Flowers"
+                      - option "Novelty And Flowers Sas"
+                      - option "Nw Wholesaler"
+                      - option "O & J Growers"
+                      - option "Oregon Flowers, Inc."
+                      - option "Our American Roots.Com"
+                      - option "P&F"
+                      - option "P&F FLOWER FARMS"
+                      - option "Passion"
+                      - option "Pinnacle Flowers"
+                      - option "Polo Farms"
+                      - option "Premier Floral Corp."
+                      - option "Premium Flowers Corp."
+                      - option "Prestige Roses S.A.S"
+                      - option "Prima Rossa"
+                      - option "Queens Flowers"
+                      - option "Rainbow Protea"
+                      - option "Red Mountain Ranch"
+                      - option "Red Mountain Ranch"
+                      - option "Rhythm & Blooms"
+                      - option "Riverdale Farms, Inc."
+                      - option "Rosas Tesalia"
+                      - option "Roses Of The World"
+                      - option "Royal Flowers"
+                      - option "San Diego Florist Supplies"
+                      - option "San Jose"
+                      - option "SAY IT WITH FLOWERS LLC"
+                      - option "Serendipity Floral"
+                      - option "Sole Farms"
+                      - option "Special Roses LLC"
+                      - option "Stellar Farms"
+                      - option "SUN VALLEY WHOLESALE FLORIST"
+                      - option "Sunrite Farms"
+                      - option "Symphony Flowers Corp."
+                      - option "Telon Usa Llc"
+                      - option "Terra Blooms"
+                      - option "The Petting Zoo"
+                      - option "The Sun Valley Group, Inc."
+                      - option "Trilogy Floral"
+                      - option "Turflor"
+                      - option "Twins Flowers Growers"
+                      - option "Unique Custom Work"
+                      - option "VADAL TRADING GROUP LLC"
+                      - option "Valley Springs LLC"
+                      - option "Washington Bulb Co., Inc."
+                      - option "Westland Orchids"
+                      - option "Yakaren Rose Farms"
+                      - option "Yolonda Thomas-Employee"
+                - 'row "Reference: To: [Local]" [ref=f3e18]':
+                  - cell "Reference:" [ref=f3e19]:
+                    - generic [ref=f3e20]: "Reference:"
+                  - cell [ref=f3e21]:
+                    - textbox [ref=f3e22]
+                  - cell "To:" [ref=f3e23]:
+                    - generic [ref=f3e24]: "To:"
+                  - cell "[Local]" [ref=f3e25]:
+                    - combobox [ref=f3e26]:
+                      - option "[Local]" [selected]
+                      - option "Bouquet Collection, Inc."
+                      - option "Kendal Central"
+                      - option "Kendal North Floral Supply"
+                      - option "Kendal South Floral Supply"
+                      - 'option "Designer`s Choice Massachuset"'
+                      - 'option "Designer`s Choice Pennsylvania"'
+                      - option "Stems, Inc"
+                      - option "UAF, Lp"
+                      - option "Stems Ecuador"
+                      - option "Queens Flowers"
+                - 'row "Invoice #: Carrier [Not Defined]" [ref=f3e27]':
+                  - 'cell "Invoice #:" [ref=f3e28]':
+                    - generic [ref=f3e29]: "Invoice #:"
+                  - cell [ref=f3e30]:
+                    - textbox [ref=f3e31]
+                  - cell "Carrier" [ref=f3e32]:
+                    - generic [ref=f3e33]: Carrier
+                  - cell "[Not Defined]" [ref=f3e34]:
+                    - combobox [ref=f3e35]:
+                      - option "[Not Defined]" [selected]
+                      - option "AMERICAN AIRLINES"
+                      - option "CH ROBINSON"
+                      - option "Ch. Robinson Crossdock"
+                      - option "Floral Trade Distributors"
+                      - option "Florexpo"
+                      - option "Florexpo Freight Miami"
+                      - option "Florexpo Freight West Coast"
+                      - option "Growers Logistics"
+                      - option "J&N Express Inc."
+                      - option "Jessup Transportation, Inc"
+                      - option "Kendal"
+                      - option "MONTEREY BAY BOUQUET"
+                      - option "Pick Up"
+                      - option "Prime Floral"
+                      - option "RG Transportation"
+                      - option "Torres Transportation"
+                - 'row "Order Ref. UC: Comments:" [ref=f3e36]':
+                  - cell "Order Ref. UC:" [ref=f3e37]
+                  - cell [ref=f3e38]:
+                    - textbox [ref=f3e39]
+                  - cell "Comments:" [ref=f3e40]:
+                    - generic [ref=f3e41]: "Comments:"
+                  - cell [ref=f3e42]:
+                    - textbox [ref=f3e43]
+                - 'row "Order Type: Everyday" [ref=f3e44]':
+                  - cell "Order Type:" [ref=f3e45]:
+                    - generic [ref=f3e46]: "Order Type:"
+                  - cell "Everyday" [ref=f3e47]:
+                    - combobox [ref=f3e48]:
+                      - option "[Not Defined]"
+                      - option "Everyday" [selected]
+                      - option "Other Holiday"
+                      - option "Promo"
+                      - option "Sample"
+                      - option "Excess"
+                      - option "Valentine's Day"
+                      - option "Mother's Day"
+                      - option "Christmas"
+                - 'row "Due Date: 00:00" [ref=f3e49]':
+                  - cell "Due Date:" [ref=f3e50]:
+                    - generic "Due Date" [ref=f3e51]: "Due Date:"
+                  - cell "00:00" [ref=f3e52]:
+                    - textbox [ref=f3e53]
+                    - combobox [ref=f3e54]:
+                      - option "00:00" [selected]
+                      - option "01:00"
+                      - option "02:00"
+                      - option "03:00"
+                      - option "04:00"
+                      - option "05:00"
+                      - option "06:00"
+                      - option "07:00"
+                      - option "08:00"
+                      - option "09:00"
+                      - option "10:00"
+                      - option "11:00"
+                      - option "12:00"
+                      - option "13:00"
+                      - option "14:00"
+                      - option "15:00"
+                      - option "16:00"
+                      - option "17:00"
+                      - option "18:00"
+                      - option "19:00"
+                      - option "20:00"
+                      - option "21:00"
+                      - option "22:00"
+                      - option "23:00"
+                - 'row "Vendor Shipment Date: 00:00" [ref=f3e55]':
+                  - cell "Vendor Shipment Date:" [ref=f3e56]:
+                    - generic "Vendor Shipment Date" [ref=f3e57]: "Vendor Shipment Date:"
+                  - cell "00:00" [ref=f3e58]:
+                    - textbox [ref=f3e59]
+                    - combobox [ref=f3e60]:
+                      - option "00:00" [selected]
+                      - option "01:00"
+                      - option "02:00"
+                      - option "03:00"
+                      - option "04:00"
+                      - option "05:00"
+                      - option "06:00"
+                      - option "07:00"
+                      - option "08:00"
+                      - option "09:00"
+                      - option "10:00"
+                      - option "11:00"
+                      - option "12:00"
+                      - option "13:00"
+                      - option "14:00"
+                      - option "15:00"
+                      - option "16:00"
+                      - option "17:00"
+                      - option "18:00"
+                      - option "19:00"
+                      - option "20:00"
+                      - option "21:00"
+                      - option "22:00"
+                      - option "23:00"
+            - generic [ref=f3e62]:
+              - generic [ref=f3e63]:
+                - generic [ref=f3e65]: Shipment
+                - generic [ref=f3e67]: Adjustments
+              - table [ref=f3e69]:
+                - rowgroup [ref=f3e70]:
+                  - 'row "AWB # : ..." [ref=f3e71]':
+                    - 'cell "AWB # :" [ref=f3e72]'
+                    - cell "..." [ref=f3e73]:
+                      - button "..." [disabled] [ref=f3e74]
+                  - row "Carrier:" [ref=f3e75]:
+                    - cell "Carrier:" [ref=f3e76]:
+                      - generic [ref=f3e77]: "Carrier:"
+                    - cell [ref=f3e78]
+                  - row "Agency:" [ref=f3e79]:
+                    - cell "Agency:" [ref=f3e80]:
+                      - generic [ref=f3e81]: "Agency:"
+                    - cell [ref=f3e82]
+                  - row "Ship:" [ref=f3e83]:
+                    - cell "Ship:" [ref=f3e84]:
+                      - generic [ref=f3e85]: "Ship:"
+                    - cell [ref=f3e86]
+          - generic [ref=f3e88]:
+            - generic [ref=f3e89]:
+              - generic [ref=f3e90]: "Boxes:"
+              - generic [ref=f3e91]: "0"
+            - generic [ref=f3e92]:
+              - generic [ref=f3e93]: "Full Boxes:"
+              - generic [ref=f3e94]: "0"
+            - generic [ref=f3e95]:
+              - generic [ref=f3e96]: "Received:"
+              - generic [ref=f3e97]: "0"
+            - generic [ref=f3e98]:
+              - generic [ref=f3e99]: "Amount:"
+              - generic [ref=f3e100]: $0.00
+            - generic [ref=f3e101]:
+              - generic [ref=f3e102]: "Adjustments :"
+              - generic [ref=f3e103]:
+                - generic [ref=f3e104]: $0.00
+                - generic [ref=f3e105]: (0.00%)
+            - generic [ref=f3e106]:
+              - generic [ref=f3e107]: "Total:"
+              - generic [ref=f3e108]: $0.00
+            - generic [ref=f3e109]:
+              - generic [ref=f3e110]: Storage...
+              - combobox [ref=f3e111]:
+                - option "[Select a Zone]"
+                - option "Cooler 1"
+                - option "Cooler 10" [selected]
+                - option "Cooler 11 empty"
+                - option "Cooler 9"
+                - option "Marinovich"
+          - table [ref=f3e112]:
+            - rowgroup [ref=f3e113]:
+              - 'row "[Add Product From..] Save Save And New Clear All Change Products QuickFill Status: Requested Request Assign To: X Show Deleted Lines:" [ref=f3e114]':
+                - cell "[Add Product From..]" [ref=f3e115]:
+                  - combobox [ref=f3e116]:
+                    - option "[Add Product From..]" [selected]
+                    - option "Quick Search"
+                    - option "Standing Orders"
+                    - option "Farm Orders"
+                    - option "Vendors Inventory"
+                    - option "Add Bulk Product"
+                    - option "Existing P.O"
+                - cell "Save" [ref=f3e117]:
+                  - button "Save" [ref=f3e118]
+                - cell "Save And New" [ref=f3e119]:
+                  - button "Save And New" [ref=f3e120]
+                - cell "Clear All" [ref=f3e121]:
+                  - button "Clear All" [ref=f3e122]
+                - cell "Change Products" [ref=f3e123]:
+                  - button "Change Products" [ref=f3e124]
+                - cell "QuickFill" [ref=f3e125]:
+                  - button "QuickFill" [ref=f3e126]
+                - cell [ref=f3e127]
+                - cell "Status:" [ref=f3e128]:
+                  - generic [ref=f3e129]: "Status:"
+                - cell "Requested" [ref=f3e130]:
+                  - combobox [ref=f3e131]:
+                    - option "Requested" [selected]
+                    - option "Approved"
+                    - option "Rejected"
+                - cell "Request" [ref=f3e132]:
+                  - generic [ref=f3e133]: Request
+                - cell [ref=f3e134]:
+                  - checkbox [ref=f3e135]
+                - cell "Assign To:" [ref=f3e136]:
+                  - generic [ref=f3e137]: "Assign To:"
+                - cell "X" [ref=f3e138]:
+                  - textbox [ref=f3e139]
+                  - button "X" [ref=f3e140]
+                - cell "Show Deleted Lines:" [ref=f3e141]
+                - cell [ref=f3e142]:
+                  - checkbox [ref=f3e143]
+          - table [ref=f3e145]:
+            - rowgroup [ref=f3e146]:
+              - row "Show Sale Order Customer Code Name Integration Code Reference Box Boxes Bunches/ Box Stems/ Bunch Stems/ Box Freight/ Unit Cost/ Unit Unit Of Cost Amount FOB location type Boxes Rec. Flex" [ref=f3e147]:
+                - cell "Show" [ref=f3e148]:
+                  - img "Show" [ref=f3e149]
+                - cell [ref=f3e150]
+                - cell [ref=f3e151]:
+                  - img [ref=f3e152]
+                - cell "Sale Order" [ref=f3e153]:
+                  - generic [ref=f3e154]: Sale
+                  - generic [ref=f3e155]: Order
+                - cell "Customer" [ref=f3e156]:
+                  - generic [ref=f3e158]: Customer
+                - cell "Code" [ref=f3e159]:
+                  - generic [ref=f3e160]: Code
+                - cell "Name" [ref=f3e161]:
+                  - generic [ref=f3e163]: Name
+                - cell "Integration Code" [ref=f3e164]:
+                  - generic [ref=f3e166]:
+                    - text: Integration
+                    - text: Code
+                - cell "Reference" [ref=f3e167]:
+                  - generic [ref=f3e169]: Reference
+                - cell "Box" [ref=f3e170]:
+                  - generic [ref=f3e172]: Box
+                - cell "Boxes" [ref=f3e173]:
+                  - generic [ref=f3e175]: Boxes
+                - cell "Bunches/ Box" [ref=f3e176]:
+                  - generic [ref=f3e178]:
+                    - generic [ref=f3e179]: Bunches/
+                    - generic [ref=f3e180]: Box
+                - cell "Stems/ Bunch" [ref=f3e181]:
+                  - generic [ref=f3e182]: Stems/
+                  - generic [ref=f3e183]: Bunch
+                - cell "Stems/ Box" [ref=f3e184]:
+                  - generic [ref=f3e186]:
+                    - generic [ref=f3e187]: Stems/
+                    - generic [ref=f3e188]: Box
+                - cell "Freight/ Unit" [ref=f3e189]:
+                  - text: Freight/
+                  - text: Unit
+                - cell "Cost/ Unit" [ref=f3e190]:
+                  - generic [ref=f3e192]:
+                    - generic [ref=f3e193]: Cost/
+                    - generic [ref=f3e194]: Unit
+                - cell "Unit Of Cost" [ref=f3e195]:
+                  - generic [ref=f3e196]: Unit Of
+                  - generic [ref=f3e197]: Cost
+                - cell "Amount" [ref=f3e198]:
+                  - generic [ref=f3e199]: Amount
+                - cell "FOB location type" [ref=f3e200]
+                - cell "Boxes Rec." [ref=f3e201]:
+                  - generic [ref=f3e202]: Boxes
+                  - text: Rec.
+                - cell [ref=f3e203]
+                - cell "Flex" [ref=f3e204]
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - text: Notifications
+      - generic [ref=e11] [cursor=pointer]: Delete All
+      - generic [ref=e12] [cursor=pointer]: Mark all as read
+    - generic [ref=e16] [cursor=pointer]: No new notifications from this session
+    - generic [ref=e18] [cursor=pointer]: Load more (10)
+  - generic [ref=e19]:
+    - generic [ref=e24]: Accessibility
+    - generic [ref=e27]:
+      - text: Contrast
+      - generic [ref=e28]:
+        - generic [ref=e30]: Filters
+        - generic [ref=e31]:
+          - button [ref=e32] [cursor=pointer]
+          - button [ref=e33] [cursor=pointer]
+          - button [ref=e34] [cursor=pointer]
+      - text: Text
+      - generic [ref=e37]: Font Size
+      - generic [ref=e44]: Letter Spacing
+      - generic [ref=e51]: Line Height
+      - generic [ref=e56]:
+        - generic [ref=e58]: Legible Font
+        - generic [ref=e60] [cursor=pointer]: A
+      - text: Assist
+      - generic [ref=e63]: Delete Cookies
+      - generic [ref=e68]: Disable Animations
+```
