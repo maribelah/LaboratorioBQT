@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../src/pages/LoginPage';
-import { getCredentials } from '../src/helpers/auth';
-import { setupPerformanceMonitoring } from '../src/helpers/metrics';
+import { performLogin } from '../src/routines/loginRoutine';
 
 /**
  * Suite de pruebas para el flujo de Login
@@ -27,53 +26,15 @@ test.describe('Login Flow - WebFlowers Alpha', () => {
    * Test 1: Login exitoso con credenciales válidas
    */
   test('should login successfully with valid credentials', async ({ page }) => {
-    // Configurar monitoreo de performance
-    const metrics = setupPerformanceMonitoring(page, {
-      slowThreshold: 2000,
-      logSlowRequests: true,
-      logErrorRequests: true
-    });
-    
-    // Obtener credenciales del ambiente actual
-    const projectName = process.env.PROJECT_NAME || 'alpha';
-    const credentials = getCredentials(projectName);
-    
-    await test.step('Verificar página de login cargada', async () => {
-      await loginPage.expectToBeOnLoginPage();
-      console.log(`✅ Página de login cargada correctamente`);
-    });
-    
-    await test.step('Ingresar credenciales', async () => {
-      await loginPage.login(credentials.email, credentials.password);
-      await loginPage.screenshot('02-credentials-entered');
-      console.log(`✅ Credenciales ingresadas: ${credentials.email}`);
-    });
-    
+    const { loginPage, metrics } = await performLogin(page, { screenshotPrefix: 'login' });
+
     await test.step('Verificar login exitoso', async () => {
-      // Esperar que la navegación complete
-      await loginPage.waitForNetworkIdle();
-      
-      // Captura después del login
-      await loginPage.screenshot('03-after-login');
-      
-      // Verificar que ya no estamos en la página de login
       const currentUrl = await loginPage.getCurrentURL();
       console.log(`✅ URL después del login: ${currentUrl}`);
-      
-      // Verificar que la URL cambió (ajustar según tu aplicación)
       expect(currentUrl).not.toContain('/login');
-      
-      console.log(`✅ Login exitoso!`);
     });
-    
-    // Imprimir resumen de métricas
+
     metrics.printSummary();
-    
-    // Aserciones sobre performance
-    const slowRequests = metrics.getSlowRequests();
-    if (slowRequests.length > 0) {
-      console.warn(`⚠️ Se detectaron ${slowRequests.length} requests lentos`);
-    }
     
     // Opcional: Fallar el test si hay demasiados requests lentos
     // expect(slowRequests.length).toBeLessThan(5);

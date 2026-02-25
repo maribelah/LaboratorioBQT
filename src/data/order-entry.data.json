@@ -1,0 +1,44 @@
+{
+  "orderBasico": {
+    "customerCode": "6099",
+    "customerName": "WAL-MART 6099-MACCLENNY",
+    "shippingDays": 5,
+    "poNumber": "QAAuto",
+    "orderBehavior": "Regular",
+    "integrationCode1": "BRDR-U023",
+    "integrationCode2": "CBS2-Q186",
+    "items": [
+      {
+        "row": 1,
+        "boxes": "27",
+        "fobPrice": "2,34"
+      },
+      {
+        "row": 2,
+        "boxes": "36",
+        "fobPrice": "0,212"
+      }
+    ]
+  },
+  "orderAlternativo": {
+    "customerCode": "1001",
+    "customerName": "Generic Customer",
+    "shippingDays": 7,
+    "poNumber": "TestPO001",
+    "orderBehavior": "Express",
+    "integrationCode1": "TEST-001",
+    "integrationCode2": "TEST-002"
+  },
+  "configuracion": {
+    "timeouts": {
+      "navigation": 60000,
+      "element": 30000,
+      "autocomplete": 5000
+    },
+    "delays": {
+      "human_typing": 100,
+      "after_selection": 500,
+      "form_submission": 1000
+    }
+  }
+}
