@@ -92,16 +92,16 @@ export class BasePage {
     for (let attempt = 0; attempt <= maxRetries; attempt++) {
       try {
         // Esperar a que el elemento esté visible
-        await locator.waitFor({ state: 'visible', timeout: 10000 });
+        await locator.waitFor({ state: 'visible', timeout: 20000 });
         
         // Scroll al elemento si es necesario
-        await locator.scrollIntoViewIfNeeded({ timeout: 5000 }).catch(() => {});
+        await locator.scrollIntoViewIfNeeded({ timeout: 8000 }).catch(() => {});
         
         // Click
-        await locator.click({ timeout: 5000 });
+        await locator.click({ timeout: 15000 });
         
         // Pequeña pausa para asegurar que el click se procesó
-        await this.wait(300);
+        await this.wait(500);
         
         return; // Éxito
       } catch (error) {
@@ -109,7 +109,7 @@ export class BasePage {
         console.log(`⚠️ Intento ${attempt + 1}/${maxRetries + 1} fallido para click. Reintentando...`);
         
         if (attempt < maxRetries) {
-          await this.wait(1500); // Esperar más entre reintentos
+          await this.wait(2000); // Esperar más entre reintentos
         }
       }
     }
