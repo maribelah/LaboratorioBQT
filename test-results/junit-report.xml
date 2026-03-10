@@ -1,0 +1,121 @@
+<testsuites id="" name="" tests="2" failures="0" skipped="1" errors="0" time="63.699471">
+<testsuite name="order-entry-screenplay.spec.ts" timestamp="2026-03-06T17:35:33.018Z" hostname="beta" tests="2" failures="0" skipped="1" time="59.983" errors="0">
+<testcase name="Order Entry - Screenplay Pattern › should create new order via Order Entry form @beta" classname="order-entry-screenplay.spec.ts" time="59.983">
+<system-out>
+<![CDATA[🎭 Actor "QA Order Creator" attempts to: Perform complete login for beta environment
+🎭 Actor "QA Order Creator" attempts to: Navigate to "https://betabqc.ghtcorptest.com/"
+🎭 Actor "QA Order Creator" attempts to: Login with credentials (qaauto)
+🎭 Actor "QA Order Creator" attempts to: Fill field with "qaauto"
+🎭 Actor "QA Order Creator" attempts to: Fill field with "qaauto"
+🎭 Actor "QA Order Creator" attempts to: Click on element
+
+⏱️  LOGIN COMPLETADO en 5894 ms (5.89s)
+🎭 Actor "QA Order Creator" attempts to: Navigate to Order Entry (Sales > New > Order Entry)
+🧭 Navegando: Sales -> New -> Order Entry
+  ▶️  Click en Sales...
+  ▶️  Click en New...
+  ▶️  Click en Order Entry...
+  ✅ Formulario Order Entry cargado
+
+⏱️  NAVEGACIÓN COMPLETADA en 2555 ms (2.56s)
+🎭 Actor "QA Order Creator" attempts to: Fill Order Entry form for Customer 6099
+📋 Llenando formulario Order Entry...
+   • Customer: 6099 (WAL-MART 6099-MACCLENNY)
+   • Shipping Date: +5 días
+   • P.O. Number: QAAuto
+   • Order Behavior: Regular
+   • Integration Code 1: BRDR-U023
+   • Integration Code 2: CBS2-Q186
+  👤 Ingresando Customer...
+     ⌨️  Escribiendo "6099" carácter por carácter...
+     ✓ Código digitado: 6099
+     ⏳ Esperando lista de opciones del autocomplete...
+  ✅ Customer seleccionado: WAL-MART 6099-MACCLENNY
+  📅 Configurando Shipping Date...
+  ✅ Fecha configurada: 03/11/2026
+  📝 Ingresando P.O. Number...
+  ⚙️  Configurando Order Behavior: Regular...
+  ✅ Order Behavior seleccionado: Regular
+  🔑 Ingresando Integration Code 1...
+     ⏳ Esperando opciones del autocomplete...
+  ⚠️  Opción específica no encontrada, usando método de teclado
+  ⏳ Esperando carga de Integration Code 1...
+  ✅ Carga completada
+  🔄 Preparando Integration Code 2...
+  🔑 Ingresando Integration Code 2...
+     ⏳ Esperando opciones del autocomplete...
+  ⚠️  Opción específica no encontrada, usando método de teclado
+  ⏳ Esperando carga de Integration Code 2...
+  ✅ Carga completada
+  ✅ Integration Codes procesados completamente
+  📦 Llenando Grid Items...
+     - Fila 1: Boxes 27, Price 2.34
+     ⏳ Esperando que el precio se procese...
+     - Fila 2: Boxes 36, Price 0.212
+     ⏳ Esperando que el precio se procese...
+  ✅ Grid Items completados
+✅ Formulario completado
+
+⏱️  FORMULARIO COMPLETADO en 39894 ms (39.89s)
+🎭 Actor "QA Order Creator" attempts to: Save order
+💾 Guardando orden...
+  ⏳ Esperando que se procese la orden...
+  🔄 Loader detectado...
+  ✅ Loader desapareció
+✅ Orden guardada
+
+⏱️  ORDEN GUARDADA en 6578 ms (6.58s)
+❓ Actor "QA Order Creator" asks: Generated order number
+
+🎉 ORDEN GENERADA: 155009
+✅ Número de orden válido: 155009
+
+============================================================
+📊 RESUMEN DE TIEMPOS
+============================================================
+01_Login            : 5894ms (5.89s)
+02_Navigation       : 2555ms (2.56s)
+03_Form_Fill        : 39894ms (39.89s)
+04_Save_Order       : 6578ms (6.58s)
+------------------------------------------------------------
+TOTAL               : 54921ms (54.92s)
+============================================================
+
+
+============================================================
+📊 Resumen de Performance
+============================================================
+Total de requests: 340
+Duración promedio: 347ms
+Request más lento: GET https://ghtstoragecdn.blob.core.windows.net/test/main.js (2210ms)
+⚠️ Requests lentos (>2000ms): 1
+❌ Requests fallidos (status >= 400): 2
+
+Requests por método:
+  GET: 254
+  POST: 86
+============================================================
+
+
+[[ATTACHMENT|order-entry-screenplay-Ord-21e24-r-via-Order-Entry-form-beta-beta\test-finished-1.png]]
+
+[[ATTACHMENT|order-entry-screenplay-Ord-21e24-r-via-Order-Entry-form-beta-beta\trace.zip]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[❌ [HTTP ERROR] 404 - GET https://betabqc.ghtcorptest.com/(S(1iktcsdqwsyljdbc1mnlckii))/Images/NewLoginImages/login_default-2.jpg
+❌ [HTTP ERROR] 404 - GET https://betabqc.ghtcorptest.com/(S(1iktcsdqwsyljdbc1mnlckii))/Images/NewLoginImages/login_default-2.jpg
+⚠️ [SLOW REQUEST] GET https://ghtstoragecdn.blob.core.windows.net/test/main.js - 2210ms
+]]>
+</system-err>
+</testcase>
+<testcase name="Order Entry - Screenplay Pattern › should validate required fields" classname="order-entry-screenplay.spec.ts" time="0">
+<properties>
+<property name="skip" value="">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>
