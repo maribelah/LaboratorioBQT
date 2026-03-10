@@ -110,28 +110,28 @@ export function setupPerformanceMonitoring(
      */
     printSummary: () => {
       console.log(`\n${'='.repeat(60)}`);
-      console.log(`📊 Performance Summary`);
+      console.log(`📊 Resumen de Performance`);
       console.log(`${'='.repeat(60)}`);
-      console.log(`Total requests: ${metrics.length}`);
+      console.log(`Total de requests: ${metrics.length}`);
       
       if (metrics.length > 0) {
         const avgDuration = metrics.reduce((acc, m) => acc + m.duration, 0) / metrics.length;
-        console.log(`Average duration: ${avgDuration.toFixed(0)}ms`);
+        console.log(`Duración promedio: ${avgDuration.toFixed(0)}ms`);
         
         const maxDuration = Math.max(...metrics.map(m => m.duration));
         const slowest = metrics.find(m => m.duration === maxDuration);
         if (slowest) {
-          console.log(`Slowest request: ${slowest.method} ${slowest.url} (${maxDuration.toFixed(0)}ms)`);
+          console.log(`Request más lento: ${slowest.method} ${slowest.url} (${maxDuration.toFixed(0)}ms)`);
         }
         
         const slow = metrics.filter(m => m.duration > slowThreshold).length;
         if (slow > 0) {
-          console.log(`⚠️ Slow requests (>${slowThreshold}ms): ${slow}`);
+          console.log(`⚠️ Requests lentos (>${slowThreshold}ms): ${slow}`);
         }
         
         const errors = metrics.filter(m => m.status >= 400).length;
         if (errors > 0) {
-          console.log(`❌ Failed requests (status >= 400): ${errors}`);
+          console.log(`❌ Requests fallidos (status >= 400): ${errors}`);
         }
         
         // Distribución por método
@@ -140,7 +140,7 @@ export function setupPerformanceMonitoring(
           return acc;
         }, {} as Record<string, number>);
         
-        console.log(`\nRequests by method:`);
+        console.log(`\nRequests por método:`);
         Object.entries(methodCounts).forEach(([method, count]) => {
           console.log(`  ${method}: ${count}`);
         });
